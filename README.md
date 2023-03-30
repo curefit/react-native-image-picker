@@ -7,7 +7,7 @@ A React Native module that allows you to select a photo/video from the device li
   <img src="https://img.shields.io/npm/v/react-native-image-picker" />
 </p>
 
-### Make sure you're reading the doc applicable to your version, for example if your using version 3.8.0 go to tag 3.8.0 and read those docs. This doc is always that of main branch.
+### Make sure you're reading the doc applicable to your version, for example if you're using version 3.8.0 go to tag 3.8.0 and read those docs. This doc is always that of main branch.
 
 ### Also read version release notes for any breaking changes especially if you're updating the major version.
 
@@ -33,7 +33,7 @@ If you are allowing user to select image/video from photos, add `NSPhotoLibraryU
 
 If you are allowing user to capture image add `NSCameraUsageDescription` key also.
 
-If you are allowing user to capture video add `NSCameraUsageDescription` add `NSMicrophoneUsageDescription` key also.
+If you are allowing user to capture video add `NSCameraUsageDescription` add `NSMicrophoneUsageDescription` keys also.
 
 ### Android
 
@@ -89,7 +89,7 @@ The `callback` will be called with a response object, refer to [The Response Obj
 | videoQuality   | OK  | OK      | 'low', 'medium', or 'high' on iOS, 'low' or 'high' on Android                                                                             |
 | durationLimit  | OK  | OK      | Video max duration in seconds                                                                                                             |
 | quality        | OK  | OK      | 0 to 1, photos                                                                                                                            |
-| cameraType     | OK  | OK      | 'back' or 'front'. May not be supported in few android devices                                                                            |
+| cameraType     | OK  | OK      | 'back' or 'front'. May not be supported on few android devices                                                                            |
 | includeBase64  | OK  | OK      | If true, creates base64 string of the image (Avoid using on large image files due to performance)                                         |                                                   |
 | includeExtra   | OK  | OK      | If true, will include extra data which requires library permissions to be requested (i.e. exif data)                                      |
 | saveToPhotos   | OK  | OK      | (Boolean) Only for launchCamera, saves the image/video file captured to public photo                                                      |
@@ -101,7 +101,7 @@ The `callback` will be called with a response object, refer to [The Response Obj
 | ------------ | --- | ------- | ------------------------------------------------------------------- |
 | didCancel    | OK  | OK      | `true` if the user cancelled the process                            |
 | errorCode    | OK  | OK      | Check [ErrorCode](#ErrorCode) for all error codes                   |
-| errorMessage | OK  | OK      | Description of the error, use it for debug purpose only             |
+| errorMessage | OK  | OK      | Description of the error, use it for debugging purpose only             |
 | assets       | OK  | OK      | Array of the selected media, [refer to Asset Object](#Asset-Object) |
 
 ## Asset Object
